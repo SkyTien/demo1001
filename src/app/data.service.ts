@@ -5,7 +5,6 @@ export class DataService {
 
   constructor() { }
 
-
   doDeleteArticle(item) {
     let idx = this.data.indexOf(item);
     this.data.splice(idx, 1);
