@@ -17,11 +17,23 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+  num: number = 10;
+
   changeTitle($event: MouseEvent) {
     console.log($event);
+    
+    this.num++;
+
     if($event.shiftKey) {
       this.title = this.title + '!';
     }
+  }
+
+  getClass() {
+    return {
+      'red': this.num%2==0,
+      'blue': this.num%2==1
+    };
   }
 
 }
