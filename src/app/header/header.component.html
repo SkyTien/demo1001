@@ -34,7 +34,10 @@
         <h1><a [href]="titleurl">{{ title }}</a></h1>
         <h3 [innerHTML]="subtitle" (click)="changeTitle($event)"
           [ngStyle]="{'font-size': num+'px'}"
-          [ngClass]="getClass()"></h3> {{num}}
+          [ngClass]="getClass()"></h3>
+          
+          {{ num | number:'3.3-3' }}
+
       </div>
 
       <div *ngIf="num%2==0" id="social-icons" class="pull-right social-icon">
