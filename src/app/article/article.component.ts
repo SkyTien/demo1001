@@ -21,8 +21,4 @@ export class ArticleComponent implements OnInit, OnChanges {
   ngDoCheck() {
   }
 
-  doDelete(item) {
-    this.datasvc.doDeleteArticle(item);
-  }
-
 }
