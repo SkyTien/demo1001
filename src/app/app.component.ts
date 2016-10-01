@@ -9,9 +9,9 @@ export class AppComponent {
   title = 'app works!';
   keyword: string = 'test';
 
-  doSearch($event: KeyboardEvent, inputDom: HTMLInputElement) {
+  doSearch($event: KeyboardEvent, keyword: string) {
     if($event.keyCode == 13) {
-      this.keyword = inputDom.value;
+      this.keyword = keyword;
     }
   }
 }
