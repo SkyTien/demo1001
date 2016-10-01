@@ -1,0 +1,13 @@
+import { Pipe, PipeTransform } from '@angular/core';
+
+@Pipe({
+  name: 'tochinesenumber'
+})
+export class TochinesenumberPipe implements PipeTransform {
+
+  transform(value: number, args?: any): any {
+    
+    return null;
+  }
+
+}
